@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Edu Revolution - Learn smarter, grow faster.">
+  <title>Edu Revolution | Learn Without Limits</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="logo" href="#home"><span>ER</span> Edu Revolution</a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation">☰</button>
+    <nav id="navigation">
+      <a href="#home">Home</a>
+      <a href="#courses">Courses</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <a class="header-cta" href="#courses">Explore Courses</a>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-copy">
+        <p class="eyebrow">LEARN • CREATE • SUCCEED</p>
+        <h1>Unlock your potential with <span>Edu Revolution.</span></h1>
+        <p class="hero-text">Build useful skills, discover new interests, and move closer to your goals with learning made simple.</p>
+        <div class="hero-actions">
+          <a class="button primary" href="#courses">Start Learning</a>
+          <a class="button secondary" href="#about">Discover More</a>
+        </div>
+        <div class="quick-stats">
+          <div><strong>10+</strong><small>Learning topics</small></div>
+          <div><strong>24/7</strong><small>Learn at your pace</small></div>
+          <div><strong>100%</strong><small>Curiosity welcome</small></div>
+        </div>
+      </div>
+      <div class="hero-art" aria-label="Illustration of books and learning" role="img">
+        <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
+        <div class="book book-back">IDEAS</div>
+        <div class="book book-front">LEARN<br><b>MORE</b></div>
+        <div class="spark spark-one">✦</div><div class="spark spark-two">✧</div>
+        <div class="art-note">Your next chapter<br>starts here.</div>
+      </div>
+    </section>
+
+    <section class="section courses-section" id="courses">
+      <div class="section-heading">
+        <p class="eyebrow">EXPLORE AND GROW</p>
+        <h2>Popular learning paths</h2>
+        <p>Choose a topic and take the first step toward a new skill.</p>
+      </div>
+      <div class="search-wrap">
+        <input id="courseSearch" type="search" placeholder="Search courses..." aria-label="Search courses">
+      </div>
+      <div class="course-grid" id="courseGrid">
+        <article class="course-card" data-title="web development html css javascript">
+          <div class="course-icon purple">⌘</div><span class="course-tag">TECHNOLOGY</span>
+          <h3>Web Development</h3><p>Learn how websites are planned, designed, and built using HTML, CSS, and JavaScript.</p>
+          <button class="text-button enroll-btn" data-course="Web Development">Explore course ↗</button>
+        </article>
+        <article class="course-card" data-title="python programming coding">
+          <div class="course-icon orange">Py</div><span class="course-tag">PROGRAMMING</span>
+          <h3>Python Programming</h3><p>Start coding with Python and understand variables, loops, functions, and classes.</p>
+          <button class="text-button enroll-btn" data-course="Python Programming">Explore course ↗</button>
+        </article>
+        <article class="course-card" data-title="data science analytics">
+          <div class="course-icon green">▥</div><span class="course-tag">DATA</span>
+          <h3>Data Science Basics</h3><p>Discover how data can be collected, explored, visualised, and used to solve problems.</p>
+          <button class="text-button enroll-btn" data-course="Data Science Basics">Explore course ↗</button>
+        </article>
+        <article class="course-card" data-title="communication soft skills">
+          <div class="course-icon pink">✎</div><span class="course-tag">PERSONAL GROWTH</span>
+          <h3>Communication Skills</h3><p>Practice clear writing, confident speaking, teamwork, and presentation skills.</p>
+          <button class="text-button enroll-btn" data-course="Communication Skills">Explore course ↗</button>
+        </article>
+        <article class="course-card" data-title="mathematics problem solving">
+          <div class="course-icon blue">∑</div><span class="course-tag">ACADEMICS</span>
+          <h3>Mathematics</h3><p>Strengthen your foundations through concepts, examples, and problem-solving practice.</p>
+          <button class="text-button enroll-btn" data-course="Mathematics">Explore course ↗</button>
+        </article>
+        <article class="course-card" data-title="design creativity ui ux">
+          <div class="course-icon yellow">✺</div><span class="course-tag">CREATIVITY</span>
+          <h3>Creative Design</h3><p>Explore design thinking, visual communication, and the basics of user experience.</p>
+          <button class="text-button enroll-btn" data-course="Creative Design">Explore course ↗</button>
+        </article>
+      </div>
+      <p class="no-results" id="noResults" hidden>No matching courses found. Try another search.</p>
+    </section>
+
+    <section class="about-section" id="about">
+      <div class="about-visual"><div class="big-circle">LEARN<br><span>EVERY DAY</span></div><div class="small-label">Knowledge creates opportunity.</div></div>
+      <div class="about-copy">
+        <p class="eyebrow">ABOUT EDU REVOLUTION</p>
+        <h2>Education should move with you.</h2>
+        <p>Edu Revolution is a student-focused concept website designed to make learning feel accessible, engaging, and practical. Our goal is to encourage learners to explore subjects and develop skills at their own pace.</p>
+        <ul><li>✓ Simple and student-friendly learning paths</li><li>✓ A mix of technical and creative topics</li><li>✓ Learning focused on curiosity and growth</li></ul>
+        <a class="button primary" href="#contact">Get in Touch</a>
+      </div>
+    </section>
+
+    <section class="contact-section section" id="contact">
+      <div class="section-heading">
+        <p class="eyebrow">LET'S CONNECT</p><h2>Have a question?</h2>
+        <p>Send a message and we’ll be happy to hear from you.</p>
+      </div>
+      <form id="contactForm" class="contact-form">
+        <label>Your name<input type="text" id="name" placeholder="Enter your name" required></label>
+        <label>Email address<input type="email" id="email" placeholder="you@example.com" required></label>
+        <label>Your message<textarea id="message" rows="4" placeholder="Write your message..." required></textarea></label>
+        <button class="button primary" type="submit">Send Message</button>
+        <p id="formMessage" class="form-message" role="status"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <a class="logo footer-logo" href="#home"><span>ER</span> Edu Revolution</a>
+    <p>Learn something today. Build something tomorrow.</p>
+    <small>© <span id="year"></span> Edu Revolution · CSE 111 Website Project</small>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
